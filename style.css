@@ -320,3 +320,118 @@ button:hover {
   margin-top: 20px;
   font-size: 13px;
 }
+
+/* product */
+
+.product-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* LEFT */
+.main-img-box {
+  width: 740px;
+  height: 550px;
+  background: #ffffff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.thumb-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* căn giữa */
+  margin-top: 15px;
+}
+
+.thumb-list img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;   /* fix ảnh lệch */
+  border-radius: 8px;
+  cursor: pointer;
+}
+.thumb-list img.active {
+  border: 2px solid #1482ff;
+}
+
+/* RIGHT */
+.product-right h1 {
+  font-size: 24px;
+}
+
+.price-box {
+  margin: 10px 0;
+}
+
+.new-price {
+  color: #0071e3;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #999;
+}
+
+/* OPTION */
+.storage span {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.storage .active {
+  border: 2px solid #0071e3;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.color.active {
+  border: 2px solid #0071e3;
+}
+
+/* PROMO */
+.promo-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+/* BUTTON */
+.buy-main {
+  background: #0071e3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.buy-main:hover {
+  transform: scale(1.03);
+}

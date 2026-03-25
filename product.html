@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>BK PHONE - iPhone Đà Nẵng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">BK PHONE</div>
+
+    <nav class="nav">
+      <a href="#">iPhone</a>
+      <a href="#">Mac</a>
+      <a href="#">iPad</a>
+      <a href="#">Watch</a>
+      <a href="#">Phụ kiện</a>
+    </nav>
+
+    <div class="actions">
+      <span>🔍</span>
+      <span>🛒</span>
+    </div>
+
+  </div>
+</header>
+
+<section class="product-detail">
+  <div class="product-container">
+
+    <!-- LEFT -->
+    <div class="product-left">
+
+      <div class="main-img-box">
+        <img src="images/IP17/1.jpeg" id="main-img">
+      </div>
+
+      <!-- THUMB -->
+      <div class="thumb-list">
+        <img src="images/IP17/1.jpeg">
+        <img src="images/IP17/2.jpeg">
+        <img src="images/IP17/3.jpeg">
+        <img src="images/IP17/4.jpeg">
+        <img src="images/IP17/5.jpeg">
+        <img src="images/IP17/6.jpeg">
+        <img src="images/IP17/7.jpeg">
+        <img src="images/IP17/8.jpeg">
+        <img src="images/IP17/9.jpeg">
+        <img src="images/IP17/10.jpeg">
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="product-right">
+
+      <h1>iPhone 17 Pro Max 256GB</h1>
+
+      <!-- PRICE -->
+      <div class="price-box">
+        <span class="new-price">36.990.000đ</span>
+        <span class="old-price">37.990.000đ</span>
+      </div>
+
+      <!-- STORAGE -->
+      <div class="option">
+        <p>Dung lượng</p>
+        <div class="storage">
+          <span class="active">256GB</span>
+          <span>512GB</span>
+          <span>1TB</span>
+          <span>2TB</span>
+        </div>
+      </div>
+
+      <!-- COLOR -->
+      <div class="option">
+        <p>Màu sắc</p>
+        <div class="colors">
+          <span class="color active" style="background:#ddd;"></span>
+          <span class="color" style="background:orange;"></span>
+          <span class="color" style="background:#2f3a5a;"></span>
+        </div>
+      </div>
+
+      <!-- ƯU ĐÃI -->
+      <div class="promo-box">
+        <h4>🎁 Ưu đãi</h4>
+        <ul>
+          <li>✔ Giảm 200.000đ khi thanh toán</li>
+          <li>✔ Trả góp 0%</li>
+          <li>✔ Tặng ốp lưng</li>
+        </ul>
+      </div>
+
+      <!-- BUTTON -->
+      <button class="buy-main">MUA NGAY</button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CHUYỂN ĐỘNG ẢNH -->
+<script>
+document.querySelectorAll('.thumb-list img').forEach(img => {
+  img.onclick = () => {
+    document.getElementById('main-img').src = img.src;
+
+    document.querySelectorAll('.thumb-list img')
+      .forEach(i => i.classList.remove('active'));
+
+    img.classList.add('active');
+  }
+});
+</script>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Hỗ trợ</h4>
+      <p>Liên hệ</p>
+      <p>Bảo hành</p>
+      <p>Đổi trả</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Chính sách</h4>
+      <p>Thanh toán</p>
+      <p>Vận chuyển</p>
+      <p>Bảo mật</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <p>Hotline: 0379.443.613</p>
+      <p>Facebook</p>
+      <p>Zalo</p>
+    </div>
+    <div class="footer-col map-col">
+  <h4>Cửa Hàng</h4>
+  <h5>115 Trần Phú - TP. Huế </h5>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.470863350983!2d107.58815087576544!3d16.451678529084784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a14414b93f39%3A0x653a0df5e198de70!2zMTE1IFRy4bqnbiBQaMO6LCBQaMaw4bubYyBWxKluaCwgSHXhur8sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1774356234163!5m2!1svi!2s"
+    height="120px" 
+    style="border:0; border-radius:10px;"
+    loading="lazy">
+  </iframe>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 BK PHONE. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
